@@ -1,7 +1,19 @@
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
 const App = () => {
   return (
-    <div className=''>CodeXplore</div>
-  )
-}
+    <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+      <BrowserRouter>
+        {/* Navbar */}
+        <Navbar />
+        {/* BreadCrumb */}
+        {/* Introduction */}
+        {/* Featured Posts */}
+        {/* POST List */}
+      </BrowserRouter>
+    </div>
+  );
+};
 
-export default App
+export default App;

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import MainCategories from "../components/MainCategories";
 import FeaturedPosts from "../components/FeaturedPosts";
+import PostLists from "../components/PostLists";
 
 const HomePage = () => {
   return (
@@ -58,6 +59,10 @@ const HomePage = () => {
       </div>
       <MainCategories />
       <FeaturedPosts />
+      <div className="">
+        <h1 className="my-8 text-2xl text-gray-600">Recent Posts</h1>
+        <PostLists />
+      </div>
     </div>
   );
 };

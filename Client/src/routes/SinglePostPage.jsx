@@ -2,6 +2,7 @@ import Image from "../components/Image";
 import { Link } from "react-router-dom";
 import PostMenuActions from "../components/PostMenuActions";
 import Search from "../components/Search";
+import Comments from "../components/Comments";
 const SinglePostPage = () => {
   return (
     <div className="flex flex-col gap-8">
@@ -109,7 +110,9 @@ const SinglePostPage = () => {
               />
               <Link className="text-blogAccent">John Doe</Link>
             </div>
-            <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+            <p className="text-sm text-gray-500">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
             <div className="flex gap-2">
               <Link>
                 <Image src="facebook.svg" />
@@ -142,6 +145,7 @@ const SinglePostPage = () => {
           <Search />
         </div>
       </div>
+      <Comments />
     </div>
   );
 };
